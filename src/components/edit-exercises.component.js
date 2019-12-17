@@ -96,7 +96,7 @@ export default class EditExercise extends Component {
     render() {
         return (
             <div>
-                <h3>Edit Exercise Log</h3>
+                <h3>Edit Wellness Log</h3>
                 <form onSubmit={this.onSubmit}>
                     <div className="form-group">
                         <label>Username: </label>
@@ -144,7 +144,7 @@ export default class EditExercise extends Component {
                     </div>
 
                     <div className="form-group">
-                        <input type="submit" value="Edit Exercise Log" className="btn btn-primary" />
+                        <input type="submit" value="Edit Wellness Log" className="btn createbtn" />
                     </div>
                 </form>
             </div>

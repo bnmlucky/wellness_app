@@ -71,5 +71,34 @@ h3 {
 
 .mainlist {
     padding: 1.5%;
-    color: #101011;
+    color: #1D1B29;
+    font-weight: 500;
+}
+
+.createbtn {
+  background-color: #5a4c3f;
+  border: 1px solid #5a4c3f;
+  color: #ebeff2;
+}
+
+.editbtn {
+  padding: 2% 3%;
+  border-radius: 5px;
+}
+
+.editbtn:hover {
+  color: #d1d0d6;
+  text-decoration: none;
+}
+
+.deletebtn {
+  border-radius: 5px;
+}
+
+.deletebtn:hover {
+  color: #d1d0d6;
+}
+
+.light {
+  color: white;
 }
