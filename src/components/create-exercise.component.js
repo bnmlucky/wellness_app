@@ -3,7 +3,8 @@ import axios from 'axios';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
 
-export default class CreateExercises extends Component {
+
+export default class CreateExercise extends Component {
     constructor(props) {
         super(props);
 
@@ -32,30 +33,34 @@ export default class CreateExercises extends Component {
                     })
                 }
             })
+            .catch((error) => {
+                console.log(error);
+            })
+
     }
 
     onChangeUsername(e) {
         this.setState({
             username: e.target.value
-        });
+        })
     }
 
     onChangeDescription(e) {
         this.setState({
             description: e.target.value
-        });
+        })
     }
 
     onChangeDuration(e) {
         this.setState({
             duration: e.target.value
-        });
+        })
     }
 
     onChangeDate(date) {
         this.setState({
             date: date
-        });
+        })
     }
 
     onSubmit(e) {
@@ -67,18 +72,20 @@ export default class CreateExercises extends Component {
             duration: this.state.duration,
             date: this.state.date
         }
+
         console.log(exercise);
 
         axios.post('http://localhost:5000/exercises/add', exercise)
-            .then(res => console.log(res.data));
+            .then(res => console.log(res.data))
 
-        // window.location = '/'
+
+        window.location = '/';
     }
 
     render() {
         return (
             <div>
-                <h3>Create a New Wellness Practice Log Entry</h3>
+                <h3>Create New Exercise Log</h3>
                 <form onSubmit={this.onSubmit}>
                     <div className="form-group">
                         <label>Username: </label>
@@ -92,7 +99,7 @@ export default class CreateExercises extends Component {
                                     return <option
                                         key={user}
                                         value={user}>{user}
-                                    </option>
+                                    </option>;
                                 })
                             }
                         </select>
@@ -126,7 +133,7 @@ export default class CreateExercises extends Component {
                     </div>
 
                     <div className="form-group">
-                        <input type="submit" value="Create Wellness Log" className="btn btn-primary" />
+                        <input type="submit" value="Create Exercise Log" className="btn btn-primary" />
                     </div>
                 </form>
             </div>
