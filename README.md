@@ -1,4 +1,4 @@
-#Wellness App Backend Notes
+# Wellness App Backend Notes
 
 The backend for Exercise/Wellness tracker app has 2 models:
 - user model;
