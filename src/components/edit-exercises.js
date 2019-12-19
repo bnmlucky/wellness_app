@@ -97,7 +97,7 @@ export default class EditExercise extends Component {
         return (
             <div>
                 <h3>Edit Wellness Log</h3>
-                <form onSubmit={this.onSubmit}>
+                <form onSubmit={(e) => this.onSubmit(e)}>
                     <div className="form-group">
                         <label>Username: </label>
                         <select ref="userInput"
