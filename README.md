@@ -44,3 +44,11 @@ This helps to keep track of self-care.
 - being able to filter the db by a specific activity, e.g. 'yoga', and show how many people did it, for how many minutes, and on which dates;
 - being able to display data in chart view to see the trends of specific activities.
 
+### New things I've learned:
+
+- React Router
+- Promises (not extremely new but not very well known, either)
+- Manipulating dates and displaying data dropdown with react-datepicker npm package
+- Creating favicons.
+
+
