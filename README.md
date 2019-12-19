@@ -19,3 +19,14 @@ Users have just 2 routes - get and add, but exercises have all the full crud rou
 
 The backend is deployed to Heroku here:  https://wellness-practice.herokuapp.com/users.
 
+# Wellness App Frontend Notes
+
+Live Site link: http://wellness-tracker-app.surge.sh/
+
+## This is what the app currently does:
+- we can add a user and associate a specific activity (exercise or wellness practice, e.g. meditation) with that user;
+- we can see the list of users, exercises, their duration and the date they were done in the index view;
+- an exercise can be edited or deleted.
+
+This helps to keep track of self-care.
+
