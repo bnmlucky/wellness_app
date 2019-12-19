@@ -30,3 +30,17 @@ Live Site link: http://wellness-tracker-app.surge.sh/
 
 This helps to keep track of self-care.
 
+## This is what the app will do:
+
+### Version 2:
+
+- notifying users that they were added to the db;
+- editing and deleting users;
+- filtering the index view by a specific user to see what they did in terms of self-care - show all the entries.
+
+### Version 3:
+
+- creating a leaderboard of the users who have spent the most time on exercise/self-care activities;
+- being able to filter the db by a specific activity, e.g. 'yoga', and show how many people did it, for how many minutes, and on which dates;
+- being able to display data in chart view to see the trends of specific activities.
+
