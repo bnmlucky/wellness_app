@@ -47,6 +47,7 @@ This helps to keep track of self-care.
 ## New things I've learned:
 
 - React Router
+- MongoDB Atlas
 - Promises (not extremely new but not very well known, either)
 - Manipulating dates and displaying data dropdown with react-datepicker npm package
 - Creating favicons.
